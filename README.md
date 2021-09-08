@@ -14,3 +14,10 @@
     `git checkout master && git merge <challenge_branch>`
     1. Push to master in your fork:<br/>
      `git push origin master`
+<<<<<<< HEAD
+=======
+
+## List of challenge branches
+* 01_ruby_intro
+* 02_input_output
+>>>>>>> 7fab30c1f9b9ad9c5458820e98fac35cf7586890
