@@ -12,3 +12,13 @@
 
 # Once you are able to output the correct output when running your code, try finding a way to get input from a user when they run your code. 
 # Then convert that input to a new "th" replaced string
+
+
+# my_string = "I was stranded in the Mississippi River"
+
+# puts my_string.gsub!(/s/, "th")
+
+puts "Please input a string with at least 10 words"
+user_string = gets.chomp
+
+puts user_string.gsub(/s/, "th")
