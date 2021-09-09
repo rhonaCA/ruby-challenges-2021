@@ -17,24 +17,26 @@ user_stop = false
 while user_stop == false
     puts "What is your name? (You can type stop anytime to exit this program)"
     user_name = gets.chomp.capitalize
-    if user_name == "Stop"
+    if user_name == 'Stop'
         user_stop = true
-    end 
+    end
+    break if user_stop == true
+
 
     puts "Hi #{user_name}! How old are you?"
     user_age = gets.chomp.capitalize
-    if user_age == "Stop"
+    if user_age == 'Stop'
         user_stop = true
-    end 
+    end
+    break if user_stop == true
+
 
     puts "Wow! You are #{user_age} years old. Congratulations!"
-
     if user_age.to_i <= 100
         puts "#{user_name}, in #{100 - user_age.to_i} years you will be 100 years old!"
     else 
         puts "#{user_name}, you are super old."
     end
-
     
 end
 
